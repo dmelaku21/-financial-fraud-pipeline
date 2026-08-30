@@ -40,8 +40,9 @@ env/
 # Data
 # =========================
 data/raw/**
+!data/raw/
 !data/raw/kaggle/
-!data/raw/kaggle/*.dvc
+!data/raw/kaggle/creditcard.csv.dvc
 data/staging/*
 data/processed/*
 data/ml_ready/*
