@@ -1,0 +1,9 @@
+{
+    "dataset": "clean_transactions.parquet",
+    "rows": 283726,
+    "columns": 34,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "negative_amounts": 0,
+    "invalid_class_values": 0
+}

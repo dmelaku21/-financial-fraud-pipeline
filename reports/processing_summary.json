@@ -1,0 +1,9 @@
+{
+    "raw_rows": 284807,
+    "clean_rows": 283726,
+    "rows_removed": 1081,
+    "ml_ready_rows": 283726,
+    "ml_ready_features": 11,
+    "target_column": "Class",
+    "output_dataset": "data/ml_ready/fraud_ml_ready.parquet"
+}

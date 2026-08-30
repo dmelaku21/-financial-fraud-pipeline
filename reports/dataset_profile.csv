@@ -1,0 +1,8 @@
+metric,value
+rows,284807.0
+columns,31.0
+missing_values,0.0
+duplicate_rows,1081.0
+fraud_count,492.0
+legitimate_count,284315.0
+fraud_percentage,0.1727485630620034

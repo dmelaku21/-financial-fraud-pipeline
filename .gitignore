@@ -1,0 +1,112 @@
+# Temporary / backup files
+*.backup
+*.backup2
+*.corrupted
+*.save
+
+# Airflow generated logs
+airflow/logs/
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Virtual Environment
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Data
+# =========================
+data/raw/**
+!data/raw/kaggle/
+!data/raw/kaggle/*.dvc
+data/staging/*
+data/processed/*
+data/ml_ready/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/processed/.gitkeep
+!data/ml_ready/.gitkeep
+
+# =========================
+# Databases
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Logs
+# =========================
+logs/*
+*.log
+
+# =========================
+# Models
+# =========================
+models/*
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# =========================
+# Reports generated locally
+# =========================
+reports/figures/*
+reports/tables/*
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# DVC
+# =========================
+.dvc/cache/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
+*.bak
+airflow/config/airflow.cfg
+*.backup
+*.backup2
+*.corrupted
+*.save
+airflow/logs/
