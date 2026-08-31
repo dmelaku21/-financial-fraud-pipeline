@@ -1,0 +1,19 @@
+digraph financial_fraud_pipeline {
+	graph [label=financial_fraud_pipeline labelloc=t rankdir=LR]
+	batch_ingestion [color="#000000" fillcolor="#f0ede4" label=batch_ingestion shape=rectangle style="filled,rounded"]
+	clean_data [color="#000000" fillcolor="#f0ede4" label=clean_data shape=rectangle style="filled,rounded"]
+	feature_engineering [color="#000000" fillcolor="#f0ede4" label=feature_engineering shape=rectangle style="filled,rounded"]
+	generate_reports [color="#000000" fillcolor="#f0ede4" label=generate_reports shape=rectangle style="filled,rounded"]
+	load_ml_ready [color="#000000" fillcolor="#f0ede4" label=load_ml_ready shape=rectangle style="filled,rounded"]
+	quality_validation [color="#000000" fillcolor="#f0ede4" label=quality_validation shape=rectangle style="filled,rounded"]
+	spark_processing [color="#000000" fillcolor="#f0ede4" label=spark_processing shape=rectangle style="filled,rounded"]
+	stream_simulation [color="#000000" fillcolor="#f0ede4" label=stream_simulation shape=rectangle style="filled,rounded"]
+	batch_ingestion -> stream_simulation
+	clean_data -> feature_engineering
+	feature_engineering -> quality_validation
+	generate_reports -> load_ml_ready
+	quality_validation -> spark_processing
+	spark_processing -> generate_reports
+	stream_simulation -> clean_data
+}
+

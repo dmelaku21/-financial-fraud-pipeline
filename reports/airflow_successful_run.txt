@@ -1,0 +1,11 @@
+dag_id                   | logical_date | task_id             | state   | start_date                       | end_date                        
+=========================+==============+=====================+=========+==================================+=================================
+financial_fraud_pipeline |              | generate_reports    | success | 2026-08-31T18:21:23.555939+00:00 | 2026-08-31T18:21:29.901913+00:00
+financial_fraud_pipeline |              | load_ml_ready       | success | 2026-08-31T18:21:30.821275+00:00 | 2026-08-31T18:21:31.562686+00:00
+financial_fraud_pipeline |              | batch_ingestion     | success | 2026-08-31T18:20:13.553618+00:00 | 2026-08-31T18:20:23.506008+00:00
+financial_fraud_pipeline |              | stream_simulation   | success | 2026-08-31T18:20:23.742775+00:00 | 2026-08-31T18:20:35.271924+00:00
+financial_fraud_pipeline |              | clean_data          | success | 2026-08-31T18:20:36.031958+00:00 | 2026-08-31T18:20:38.742260+00:00
+financial_fraud_pipeline |              | feature_engineering | success | 2026-08-31T18:20:39.365063+00:00 | 2026-08-31T18:20:40.218710+00:00
+financial_fraud_pipeline |              | quality_validation  | success | 2026-08-31T18:20:40.498423+00:00 | 2026-08-31T18:20:47.344177+00:00
+financial_fraud_pipeline |              | spark_processing    | success | 2026-08-31T18:20:48.203521+00:00 | 2026-08-31T18:21:22.949076+00:00
+                                                                                                                                             
